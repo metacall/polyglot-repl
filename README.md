@@ -16,18 +16,18 @@ This repository implements a polyglot REPL which shares the state of the meta-ob
 
 3) For testing it:
     ```sh
-    %%help
-    %%load py test/test.py
-    %%inspect
-    %%repl py
+    %help
+    %load py test/test.py
+    %inspect
+    %repl py
     print("hello world from python")
     a = 4
-    %%repl node
+    %repl node
     const e = 234
-    %%repl py
+    %repl py
     print(a) # This will share the state with previous execution of the Python REPL (4)
-    %%repl node
+    %repl node
     console.log(e) // This will share the state with previous execution of the Node REPL (234) 
     require('metacall').metacall('a') // This will invoke the function a loaded from test/test.py
-    %%exit
+    %exit
     ```

@@ -6,6 +6,7 @@ const {
 let promise, promiseResolve, promiseReject;
 
 const r = repl.start({
+    prompt: '',
     writer: output => {
         if (promiseResolve) {
             promiseResolve(output);
