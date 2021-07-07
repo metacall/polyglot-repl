@@ -1,0 +1,13 @@
+{
+  "name": "metacall-polylot-repl",
+  "version": "0.1.0",
+  "description": "Basic example of MetaCall with Express FaaS-like showing the REPL protocol.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "metacall index.js"
+  },
+  "author": "Vicente Eduardo Ferrer Garcia <vic798@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}

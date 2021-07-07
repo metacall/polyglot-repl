@@ -1,0 +1,32 @@
+There are 9 handle(s) keeping the process running
+
+# FSREQWRAP
+~/Downloads/metacall-polyglot-repl/index.js:15 - fs.readdir(scriptsPath, (err, files) => {
+~/Downloads/metacall-polyglot-repl/index.js:12 - const load = () => new Promise((resolve, reject) => {
+~/Downloads/metacall-polyglot-repl/index.js:43 - const functions = await load();
+~/Downloads/metacall-polyglot-repl/index.js:52 - })();
+
+# INSPECTORJSBINDING
+~/Downloads/metacall-polyglot-repl/scripts/repl.js:8 - const r = repl.start({
+
+# TickObject
+(unknown stack trace)
+
+# Immediate
+~/Downloads/metacall-polyglot-repl/scripts/repl.js:22 - setImmediate(callback);
+
+# Immediate
+~/Downloads/metacall-polyglot-repl/scripts/repl.js:17 - setImmediate(() => this.push(null));
+
+# TickObject
+(unknown stack trace)
+
+# TickObject
+(unknown stack trace)
+
+# TickObject
+(unknown stack trace)
+
+# TickObject
+~/Downloads/metacall-polyglot-repl/scripts/repl.js:37 - return r.close();
+~/Downloads/metacall-polyglot-repl/index.js:47        - await functions['node_repl_close']();
