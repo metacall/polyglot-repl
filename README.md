@@ -1,5 +1,7 @@
 # [MetaCall](https://github.com/metacall/core/) Polyglot REPL
 
+![image](assets/terminal.gif)
+
 ## Description
 
 This repository implements a Polyglot REPL which shares the state of the meta-object protocol between the REPLs. Using the Polyglot REPL, you can share state between multiple languages through their individual REPL and mix code straight from your terminal.
@@ -31,14 +33,10 @@ The entry script `index.js` provides an abstraction over the usage of the high-l
     curl -sL https://raw.githubusercontent.com/metacall/install/master/install.sh | sh
     ```
 
-2) In a terminal, run:
+2) For running it:
     ```sh
     metacall index.js
     ```
-
-## Usage
-
-![image](assets/terminal.gif)
 
 ## LICENSE
 
