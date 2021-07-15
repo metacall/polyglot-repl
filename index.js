@@ -13,7 +13,7 @@ const {
 module.exports = (async () => {
     const cmdPrefix = '%';
 
-    // Error handling
+    // Error Handling
     const handleError = ex => {
         const error = ({
             UnrecognizedCommandError: () => `${ex.message}, type ${cmdPrefix}help for more info.`,
@@ -28,7 +28,14 @@ module.exports = (async () => {
     const commands = {
         repl: (...args) => {
             try {
-                select(args[0]);
+                let repl = args[0];
+                select(repl);
+                if (repl == "node") {
+                    console.log("Node REPL has been selected");
+                }
+                if (repl == "py") {
+                    console.log("Python REPL has been selected");
+                }
             } catch (ex) {
                 handleError(ex);
             }
@@ -59,7 +66,6 @@ module.exports = (async () => {
             process.exit(0); // TODO: This is temporal, due to a bug in metacall related to async handles
         }
     };
-
-    // Execute the top module REPL
     await cli(cmdPrefix, commands, console.log, handleError);
 })();
+
