@@ -28,14 +28,9 @@ module.exports = (async () => {
     const commands = {
         repl: (...args) => {
             try {
-                let repl = args[0];
+                const repl = args[0];
                 select(repl);
-                if (repl == "node") {
-                    console.log("Node REPL has been selected");
-                }
-                if (repl == "py") {
-                    console.log("Python REPL has been selected");
-                }
+                console.log(`REPL '${repl}' has been selected.`);
             } catch (ex) {
                 handleError(ex);
             }
