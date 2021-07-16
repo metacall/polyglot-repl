@@ -1,6 +1,6 @@
 {
-  "name": "metacall-polylot-repl",
-  "version": "0.1.0",
+  "name": "metacall-polyglot-repl",
+  "version": "0.1.1",
   "description": "Basic example of MetaCall with Express FaaS-like showing the REPL protocol.",
   "main": "index.js",
   "scripts": {
