@@ -17,7 +17,10 @@ module.exports = (async (cmdPrefix = '%', commands, resultCb, errorCb) => {
         input: process.stdin,
         output: process.stdout
     });
-    
+
+    console.log(`Select first a REPL by using ${cmdPrefix}repl <tag>, i.e: ${cmdPrefix}repl py, ${cmdPrefix}repl node.`);
+    iface.prompt();
+
     iface.on('line', line => {
         if (line.startsWith(cmdPrefix)) {
             const tokens = line.split(' ');
